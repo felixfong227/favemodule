@@ -1,0 +1,48 @@
+#share-box{
+
+  background: $third-color;
+  position: fixed;
+  top: 100vh; //Close
+  left: 0em;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  z-index: 2;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+
+  &.open-box{
+    top: 0em;
+    opacity: 1;
+  }
+
+  #package-name{
+    background: none;
+    border: none;
+    border-bottom: #2d4791 3px solid;
+    outline: none;
+    color: #FFF;
+    font-size: 1.1em;
+    margin: 1em;
+    text-transform: uppercase;
+  }
+
+  #share{
+    text-transform: uppercase;
+    background: #000191;
+    color: #FFF;
+    width: auto;
+    height: auto;
+    padding: 1.5em;
+  }
+
+  .close{
+    @extend #share;
+    background: rgba(red,0.5);
+  }
+
+}

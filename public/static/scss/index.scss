@@ -1,0 +1,26 @@
+
+$theme-color: #4F1C4C;
+$second-color: #6f276c;
+$third-color: #91318E;
+
+// Including all the modules
+@import "module/navbar/navbar";
+@import "module/modules-list/module-list";
+@import "module/share/share-button";
+@import "module/share/box/share-box";
+@import "module/notification/notification";
+
+
+// Fonst
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+  padding: 0em;
+  margin: 0em;
+  overflow-x: hidden;
+}
+
+html{
+  font-family: 'Oswald', sans-serif;
+  background: $theme-color;
+}

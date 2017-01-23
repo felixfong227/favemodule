@@ -1,0 +1,21 @@
+#notification{
+  width: auto;
+  height: auto;
+  padding: 0.5em 1em;
+  position: fixed;
+  bottom: -100vh;
+  left: 1em;
+  background: #000;
+  color: #7A9EAF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 10;
+
+  &.open{
+    bottom: 1em;
+  }
+
+}

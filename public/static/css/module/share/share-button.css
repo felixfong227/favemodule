@@ -1,0 +1,13 @@
+#my-fave-is {
+  background: #78ceeb url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg") no-repeat center;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  -webkit-box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
+  -moz-box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
+  box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8); }
+
+/*# sourceMappingURL=share-button.css.map */

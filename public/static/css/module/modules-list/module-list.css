@@ -1,0 +1,11 @@
+#modules-list {
+  width: 100vw;
+  height: 100vh; }
+  #modules-list div {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background: #FFF;
+    margin: 1em 0em; }
+
+/*# sourceMappingURL=module-list.css.map */

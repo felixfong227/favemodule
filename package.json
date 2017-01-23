@@ -1,0 +1,24 @@
+{
+  "name": "favemodules",
+  "version": "1.0.0",
+  "description": "A place where you can share your favorite NodeJS module from NPM",
+  "main": "bin/index.js",
+  "scripts": {
+    "scss-build": "sass --watch public/static/scss:public/static/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/felixfong227/favemodule.git"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "share"
+  ],
+  "author": "@felixfong227",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixfong227/favemodule/issues"
+  },
+  "homepage": "https://github.com/felixfong227/favemodule#readme"
+}

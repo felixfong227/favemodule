@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+#navbar-placeholder {
+  width: 100vw;
+  height: 3em;
+  position: relative;
+  top: 0em;
+  left: 0em;
+  padding-bottom: 1em; }
+  #navbar-placeholder #navbar {
+    width: 100vw;
+    height: 3em;
+    padding: 0.5em;
+    background: #6f276c;
+    color: #FFF;
+    position: fixed; }
+
+#modules-list {
+  width: 100vw;
+  height: 100vh; }
+  #modules-list div {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background: #FFF;
+    margin: 1em 0em; }
+
+#my-fave-is {
+  background: #78ceeb url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg") no-repeat center;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  -webkit-box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
+  -moz-box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
+  box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8); }
+
+#share-box {
+  background: #91318E;
+  position: fixed;
+  top: 100vh;
+  left: 0em;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  z-index: 2;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0; }
+  #share-box.open-box {
+    top: 0em;
+    opacity: 1; }
+  #share-box #package-name {
+    background: none;
+    border: none;
+    border-bottom: #2d4791 3px solid;
+    outline: none;
+    color: #FFF;
+    font-size: 1.1em;
+    margin: 1em;
+    text-transform: uppercase; }
+  #share-box #share, #share-box .close {
+    text-transform: uppercase;
+    background: #000191;
+    color: #FFF;
+    width: auto;
+    height: auto;
+    padding: 1.5em; }
+  #share-box .close {
+    background: rgba(255, 0, 0, 0.5); }
+
+#notification {
+  width: auto;
+  height: auto;
+  padding: 0.5em 1em;
+  position: fixed;
+  bottom: -100vh;
+  left: 1em;
+  background: #000;
+  color: #7A9EAF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 10; }
+  #notification.open {
+    bottom: 1em; }
+
+* {
+  padding: 0em;
+  margin: 0em;
+  overflow-x: hidden; }
+
+html {
+  font-family: 'Oswald', sans-serif;
+  background: #4F1C4C; }
+
+/*# sourceMappingURL=index.css.map */

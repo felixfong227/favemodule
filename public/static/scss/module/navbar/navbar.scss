@@ -1,0 +1,19 @@
+$nav-height: 3em;
+#navbar-placeholder{
+  width: 100vw;
+  height: $nav-height;
+  position: relative;
+  top: 0em;
+  left: 0em;
+  padding-bottom: 1em;
+
+  #navbar{
+    width: 100vw;
+    height: $nav-height;
+    padding: 0.5em;
+    background: $second-color;
+    color: #FFF;
+    position: fixed;
+  }
+
+}
