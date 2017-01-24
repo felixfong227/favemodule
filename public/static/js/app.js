@@ -9,6 +9,9 @@ var config = {
 firebase.initializeApp(config);
 
 
+
+
+
 var shareButton = document.querySelector("#my-fave-is"),
     shareBox = document.querySelector("#share-box"),
     modulesList = document.querySelector("#modules-list"),
@@ -109,5 +112,37 @@ packageBoxEls.share.addEventListener("click",function () {
         }
 
     };
+
+});
+
+
+// FCM
+var messaging = firebase.messaging();
+messaging.requestPermission()
+    .then(function () {
+
+        return messaging.getToken();
+
+    })
+    .then(function (token) {
+
+        // Save the notification token to the browser cookie
+        document.cookie = "notificationtoken="+token+"; expires=Thu, 18 Dec 2020 12:00:00 UTC; path=/";
+        console.log(token);
+    })
+;
+
+// When scrolling,the share button will hide
+var hideShareButtonWhenScrolling = null;
+
+modulesList.addEventListener("scroll",function () {
+
+    if(hideShareButtonWhenScrolling !== null){
+        shareButton.classList.add("hide");
+        clearTimeout(hideShareButtonWhenScrolling);
+    }
+    hideShareButtonWhenScrolling = setTimeout(function () {
+        shareButton.classList.remove("hide");
+    },600);
 
 });

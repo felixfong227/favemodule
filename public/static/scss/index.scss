@@ -24,3 +24,20 @@ html{
   font-family: 'Oswald', sans-serif;
   background: $theme-color;
 }
+
+// Hide the scroll bar
+body::--webkit-scrollbar{
+  width: 0px;
+}
+
+body::--moz-scrollbar{
+  width: 0px;
+}
+
+body::--o-scrollbar{
+  width: 0px;
+}
+
+body::--ms-scrollbar{
+  width: 0px;
+}

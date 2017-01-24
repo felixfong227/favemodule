@@ -34,7 +34,16 @@
   right: 1em;
   -webkit-box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
   -moz-box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
-  box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8); }
+  box-shadow: 4px 4px 10px rgba(22, 22, 22, 0.8);
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  opacity: 1; }
+  #my-fave-is.hide {
+    opacity: 1;
+    bottom: -100vh; }
 
 #share-box {
   background: #91318E;
@@ -99,5 +108,17 @@
 html {
   font-family: 'Oswald', sans-serif;
   background: #4F1C4C; }
+
+body::--webkit-scrollbar {
+  width: 0px; }
+
+body::--moz-scrollbar {
+  width: 0px; }
+
+body::--o-scrollbar {
+  width: 0px; }
+
+body::--ms-scrollbar {
+  width: 0px; }
 
 /*# sourceMappingURL=index.css.map */
