@@ -1,0 +1,14 @@
+{
+  "short_name": "Favemodules",
+  "name": "Favemodules",
+  "icons": [
+    {
+      "src": "/src/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}
