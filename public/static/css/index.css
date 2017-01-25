@@ -100,6 +100,9 @@
   #notification.open {
     bottom: 1em; }
 
+.icon {
+  width: 3em; }
+
 * {
   padding: 0em;
   margin: 0em;

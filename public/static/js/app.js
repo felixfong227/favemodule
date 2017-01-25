@@ -55,6 +55,17 @@ db.on("value",function (snap) {
             version.textContent = self.version;
             packageContainer.appendChild(version);
 
+            var npmLink = document.createElement("a");
+            npmLink.href = "https://npmjs.com/package/" + self.name;
+            npmLink.target = "_self";
+
+            var npm = document.createElement("img");
+            npm.textContent = self.npm;
+            npm.className = "icon npm";
+            npm.src = "./src/npm.png"
+            npmLink.appendChild(npm);
+            packageContainer.appendChild(npmLink);
+
 
             modulesList.appendChild(packageContainer);
         }
@@ -115,22 +126,6 @@ packageBoxEls.share.addEventListener("click",function () {
 
 });
 
-
-// FCM
-var messaging = firebase.messaging();
-messaging.requestPermission()
-    .then(function () {
-
-        return messaging.getToken();
-
-    })
-    .then(function (token) {
-
-        // Save the notification token to the browser cookie
-        document.cookie = "notificationtoken="+token+"; expires=Thu, 18 Dec 2020 12:00:00 UTC; path=/";
-        console.log(token);
-    })
-;
 
 // When scrolling,the share button will hide
 var hideShareButtonWhenScrolling = null;

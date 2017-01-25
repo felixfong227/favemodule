@@ -6,6 +6,6 @@ function pushNotification(msg) {
 
     setTimeout(function () {
         notification.classList.remove("open");
-    },2000);
+    },3000);
 
 }
