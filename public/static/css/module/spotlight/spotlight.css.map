@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,wBAAwB;EAEtB,iBAAiB,EAAE,mBAAmB;EACtC,YAAY,EAAE,mBAAmB;EACjC,SAAS,EAAE,mBAAmB;AAE9B,oBAUC;EARC,IAAI;IACF,UAAU,EAAE,OAAO;EAGrB,EAAE;IACA,UAAU,EAAE,IAAI",
+"sources": ["../../../scss/module/spotlight/spotlight.scss"],
+"names": [],
+"file": "spotlight.css"
+}

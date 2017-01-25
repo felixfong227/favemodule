@@ -21,7 +21,7 @@ var shareButton = document.querySelector("#my-fave-is"),
         packageName: document.querySelector("#share-box #package-name"),
         share: document.querySelector("#share-box #share")
     },
-    ajax = new XMLHttpRequest();
+    ajax = new XMLHttpRequest()
 ;
 
 var db = firebase.database().ref("/pkgs");
@@ -41,7 +41,8 @@ db.on("value",function (snap) {
             var self = allPackages[key];
 
             var packageContainer = document.createElement("div");
-            packageContainer.className = "module " + self.name;
+            packageContainer.className = "module";
+            packageContainer.id = self.name;
 
             var name = document.createElement("p");
             name.textContent = self.name;
@@ -61,15 +62,46 @@ db.on("value",function (snap) {
 
             var npm = document.createElement("img");
             npm.textContent = self.npm;
-            npm.className = "icon npm";
+            npm.className = "icon npm " + self.name;
             npm.src = "./src/npm.png"
+
             npmLink.appendChild(npm);
             packageContainer.appendChild(npmLink);
 
 
             modulesList.appendChild(packageContainer);
+
         }
 
+    }
+    npmIcons = document.querySelectorAll("#modules-list .module .icon.npm");
+
+    // When the NPM icon is click
+    // Save the current package position
+
+    npmIcons.forEach(function (icon) {
+
+        icon.addEventListener("click",function (e) {
+            // Stop everything first
+            e.preventDefault();
+
+            // Get the package name
+            var _pkgName = this.className.split("icon npm ")[1].trim();
+            // Set the has for user to get back
+            window.location.hash = _pkgName;
+            // Send the user to the NPM website
+            window.open("https://npmjs.com/package/" + _pkgName,"_self");
+        });
+
+    });
+
+    // Spotlight feature
+    if(window.location.hash){
+        var id = window.location.hash.split("#")[1];
+        var query = "#modules-list #" + id;
+        var element = document.querySelector(query)
+        element.classList.add("spotlight");
+        element.scrollIntoView();
     }
 
 

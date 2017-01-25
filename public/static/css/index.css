@@ -103,6 +103,15 @@
 .icon {
   width: 3em; }
 
+#modules-list .spotlight {
+  -webkit-animation: spotlight 0.6s ease;
+  -o-animation: spotlight 0.6s ease;
+  animation: spotlight 0.6s ease; }
+@keyframes spotlight {
+  from {
+    background: #ffd617; }
+  to {
+    background: #FFF; } }
 * {
   padding: 0em;
   margin: 0em;
